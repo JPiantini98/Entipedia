@@ -107,7 +107,7 @@ function formatDate(value: string) {
 
   return (
     <div className="p-4">
-        <h1 className="text-2xl font-bold text-gray-800">Listado de Clientes</h1>
+        <h1 className="text-2xl font-bold text-gray-800">Lista de Clientes</h1>
         <p className="text-gray-600 mt-1 mb-10">
             Aquí puedes crear, editar y eliminar clientes. Para editar solo debes de dar clic en la fila que quieras editar, el resto lo tienes.
         </p>
@@ -122,7 +122,7 @@ function formatDate(value: string) {
 
       <button
         onClick={() => setShowModal(true)}
-        className="mb-4 px-4 py-2 font-bold text-black border rounded hover:scale-115 transition-transform bg-[#FFD100]"
+        className="mb-4 px-4 py-2 font-bold text-black border border-gray-300 rounded hover:scale-115 transition-transform bg-[#FFD100]"
         >
         Crear Cliente 
         </button>
@@ -131,15 +131,15 @@ function formatDate(value: string) {
 
 
 
-      <table className="w-full border border-black">
+      <table className="w-full border border-gray-300">
         <thead className="bg-[#FFD100]">
           <tr>
-            <th className="p-2 text-black">Nombre</th>
-            <th className="p-2 text-black">Tipo</th>
-            <th className="p-2 text-black">Valor</th>
-            <th className="p-2 text-black">Desde</th>
-            <th className="p-2 text-black">Hasta</th>
-            <th className="p-2 text-black"></th>
+            <th className="p-2 border text-black">Nombre</th>
+            <th className="p-2 border text-black">Tipo</th>
+            <th className="p-2 border text-black">Valor</th>
+            <th className="p-2 border text-black">Desde</th>
+            <th className="p-2 border text-black">Hasta</th>
+            <th className="p-2 border text-black"></th>
           </tr>
         </thead>
         <tbody>

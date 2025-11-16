@@ -133,7 +133,7 @@ const KanbanBoard: React.FC = () => {
 
         <button
             onClick={() => setShowModal(true)}
-            className="mb-4 px-4 py-2 bg-[#FFD100] rounded hover:scale-115 transition-transform text-black font-bold border"
+            className="mb-4 px-4 py-2 bg-[#FFD100] rounded hover:scale-115 transition-transform text-black font-bold border border-gray-300"
         >
             Crear Proyecto
         </button>
@@ -142,7 +142,7 @@ const KanbanBoard: React.FC = () => {
             {columns.map(col => (
             <div
                 key={col}
-                className="bg-[#FFD100] border p-4 rounded-lg min-h-[300px] text-black"
+                className="bg-[#FFD100] border border-gray-400 p-4 rounded-lg min-h-[300px] text-black"
                 onDragOver={e => e.preventDefault()}
                 onDrop={e => handleDrop(e, col)}
             >
@@ -156,7 +156,7 @@ const KanbanBoard: React.FC = () => {
                     onDragStart={e => handleDragStart(e, p.id)}
                     onDragEnd={handleDragEnd}
                     className={`relative bg-white rounded p-3 mb-3 cursor-move transition-all duration-200 ease-in-out
-                        ${draggingId === p.id ? "scale-105 shadow-xl ring-2 ring-yellow-400" : "hover:scale-105 hover:shadow-lg border"}`}
+                        ${draggingId === p.id ? "scale-105 shadow-xl ring-2 ring-yellow-400" : "hover:scale-105 hover:shadow-lg border border-gray-300"}`}
                     >
                     <p><strong>Nombre:</strong> {p.nombre}</p>
                     <p><strong>Descripción:</strong> {p.descripcion}</p>
