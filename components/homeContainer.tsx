@@ -28,16 +28,17 @@ const DashboardHome: React.FC = () => {
       {/* Tarjetas de acceso rápido */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
         {quickActions.map((action, idx) => (
-          <div
-            key={idx}
-            className="flex flex-col items-center justify-center rounded-lg p-6 bg-white hover:scale-105 hover:shadow-xl transition-transform cursor-pointer"
-          >
-            <Link href={action.sendTo}>
-                <span className="text-4xl mb-2">{action.icon}</span>
-                <h3 className="text-lg font-semibold">{action.title}</h3>
-            </Link>
-            
-          </div>
+
+          <Link href={action.sendTo}>
+            <div
+              key={idx}
+              className="flex flex-col items-center justify-center rounded-lg p-6 bg-white hover:scale-105 hover:shadow-xl transition-transform cursor-pointer"
+            >
+              <span className="text-4xl mb-2">{action.icon}</span>
+              <h3 className="text-lg font-semibold">{action.title}</h3>
+
+            </div>          
+          </Link>
         ))}
       </div>
 
